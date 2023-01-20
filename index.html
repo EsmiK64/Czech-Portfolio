@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ŠimonWithoutLinux</title>
+	<meta name="description" content="Oficiální stránky programátora a YouTubera šipína (Esmíka)">
+	<meta name="keywords" content="programátor,youtuber,šipín,esmík,www-stránka">
+	<meta name="author" content="šipín">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content[="yes">
+	<meta name="apple-mobile-web-app-title" content="ŠIPÍN">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bg.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2275baa183.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="menu-wrap">
+		<input type="checkbox" class="toggler">
+		<div class="hamburger">
+			<div></div>
+		</div>
+		<div class="menu">
+			<div>
+				<div>
+					<ul>
+						<li><a href="index.html">Domů</a></li>
+						<li><a href="tvorba.html">Má tvorba</a></li>
+						<li><a href="zajmy.html">Zájmy a dovednosti</a></li>
+						<li><a href="cile.html">Cíle</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="uvod"></div>
+	<div id="transition" class="transition-close"></div>
+	<header class="sedy-ram1">
+		<div class="sedy-ram1"></div>
+		<section class="hlavni-nadpis">
+			<br>
+			<h1>Šimon Borovec</h1>
+			<p style="text-align:center"><span id="random-text"></span></p><br>
+			<script>
+				var random_text = new Array();
+				random_text[0] = "---------   the only dev not using Linux";
+				random_text[1] = "---------   probably listening to Queens at the moment";
+				random_text[2] = "---------   *you're";
+				random_text[3] = "---------   i like <i>beans</i>";
+				random_text[4] = "---------   your mom";
+				random_text[5] = "---------   probably sleepin' in school";
+				random_text[6] = "---------   eat; sleep; code; repeat";
+
+				var i = Math.floor(7 * Math.random());
+
+				document.getElementById("random-text").innerHTML = random_text[i];
+			</script>
+		</section>
+	</header>
+	<main>
+		<section id="kdo_jsem">
+			<div id="contacts">
+				<h3><img src="img/contacts.svg" alt="contacts icon" width="25px" height="25px"
+						style="vertical-align: sub;"> Kontakty</h3>
+				<p>
+					E-mail: simonborovec517@gmail.com <br>
+					Discord: EsmiK#2706<br>
+					Twitter: @EsmiK15<br>
+				</p>
+			</div>
+			<div id="animator">
+				<p id="menu" onclick="showMenu()"><b>VÍCE...</b></p>
+				<div id="kruh" class="kruh-style kruh-open"></div>
+				<img id="profile_pic" src="img/profile.jpg">
+			</div>
+			<div id="info">
+				<h3><img src="img/contacts.svg" alt="contacts icon" width="25px" height="25px"
+						style="vertical-align: sub;"> O mně</h3>
+				<p>
+					Ahoj, jsem Šimon a jsem programátor, grafik,<br>
+					hudebník, editor a YouTuber.<br>
+					Dělám toho hodně, a možná proto<br>
+					jsem průměrný ve všem. :)
+				</p>
+			</div>
+		</section>
+		<section id="menu-section" class="menu-section-style">
+			<div id="animator">
+				<p id="tvorba" class="menu-link" onclick="transition('tvorba.html')"><b>Má<br>tvorba</b></p>
+				<div id="kruh-menu"></div>
+				<img id="profile_pic" src="img/palette.svg" style="border-radius: 0;" href="zajmy.html">
+			</div>
+			<div id="animator">
+				<p id="zajmy" class="menu-link" onclick="transition('zajmy.html')"><b>Zájmy<br>a<br>dovednosti</b></p>
+				<div id="kruh-menu"></div>
+				<img id="profile_pic" src="img/code.svg" style="border-radius: 0;" href="zajmy.html">
+			</div>
+			<div id="animator">
+				<p id="cile" class="menu-link" onclick="transition('cile.html')"><b>Mé<br>cíle</b></p>
+				<div id="kruh-menu" href="cile.html"></div>
+				<img id="profile_pic" src="img/chart.svg" style="border-radius: 0;" href="cile.html">
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>

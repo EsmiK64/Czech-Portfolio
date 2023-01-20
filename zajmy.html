@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Mé zájmy</title>
+	<meta name="description" content="Oficiální stránky programátora a YouTubera šipína (Esmíka)">
+	<meta name="keywords" content="programátor,youtuber,šipín,esmík,www-stránka">
+	<meta name="author" content="šipín">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content[="yes">
+	<meta name="apple-mobile-web-app-title" content="ŠIPÍN">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bg.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2275baa183.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="menu-wrap">
+		<input type="checkbox" class="toggler">
+		<div class="hamburger">
+			<div></div>
+		</div>
+		<div class="menu">
+			<div>
+				<div>
+					<ul>
+						<li><a href="index.html">Domů</a></li>
+						<li><a href="tvorba.html">Má tvorba</a></li>
+						<li><a href="zajmy.html">Zájmy a dovednosti</a></li>
+						<li><a href="cile.html">Cíle</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="uvod"></div>
+	<div id="transition" class="transition-close"></div>
+	<header class="sedy-ram1">
+		<div class="sedy-ram1"></div>
+		<section class="hlavni-nadpis">
+			<br>
+			<h1>Mé zájmy</h1>
+			<p style="text-align:center"><span id="random-text"></span></p><br>
+			<script>
+				var random_text = new Array();
+				random_text[0] = "---------   the only dev not using Linux";
+				random_text[1] = "---------   probably listening to Queens at the moment";
+				random_text[2] = "---------   *you're";
+				random_text[3] = "---------   i like <i>beans</i>";
+				random_text[4] = "---------   your mom";
+				random_text[5] = "---------   probably sleepin' in school";
+				random_text[6] = "---------   eat; sleep; code; repeat";
+
+				var i = Math.floor(7 * Math.random());
+
+				document.getElementById("random-text").innerHTML = random_text[i];
+			</script>
+		</section>
+	</header>
+	<div id="ram">
+		<h2>Skaut</h2>
+		<p id="ram-text">Posláním skautingu je všestranně rozvíjet děti a mladé lidi k plnění povinností vůči sobě,
+			svému okolí i vyšším hodnotám. Tyto tři principy jsou vyjádřeny ve skautském slibu a zákoně, které je
+			konkretizují do podoby morálního kodexu pro každodenní život. Činnost skautského hnutí je pak naplňována
+			skautskou výchovnou metodou, která kromě slibu a zákona zahrnuje učení se zkušeností, pobyt v přírodě,
+			samosprávu malých skupin členů podobného věku podporovaných dospělými (družinový systém), individuální
+			program osobního růstu (např. skrz skautskou stezku), používání symbolů a symbolických rámců a zapojení do
+			společnosti na různých úrovních dění. <br>(<i>zdroj: <a
+					href="https://cs.wikipedia.org/wiki/Skauting"><u>Wikipedie</u></i></a>)</i></p>
+	</div>
+	<div id="ram">
+		<h2>Fotografie</h2>
+		<p id="ram-text">Rád fotím, no. Mám to snad nějak víc vysvětlovat ;D</p>
+	</div>
+	<div id="ram">
+		<h2>Nezbyl čas</h2>
+		<p id="ram-text">pety nesou</p>
+	</div>
+</body>
+
+</html>
